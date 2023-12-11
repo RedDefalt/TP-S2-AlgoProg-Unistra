@@ -1,0 +1,28 @@
+Réponses:
+
+1. Échange d'adresses
+a. echange1: Cette fonction prend deux entiers p1 et p2 en tant que paramètres, mais elle effectue un échange local sans affecter les variables originales. Elle utilise une variable temporaire pour effectuer l'échange.
+
+echange2: Cette fonction prend deux pointeurs sur des entiers p1 et p2 en tant que paramètres et échange les valeurs pointées par ces pointeurs. Cela modifie effectivement les variables originales.
+
+echange3: Cette fonction prend deux pointeurs sur des entiers p1 et p2 en tant que paramètres, mais elle effectue un échange local des pointeurs, n'affectant pas les variables originales.
+
+echange4: Cette fonction prend deux pointeurs sur des pointeurs sur des entiers p1 et p2 en tant que paramètres et échange les pointeurs eux-mêmes, affectant ainsi les variables originales.
+
+b. À l'exécution du programme, les fonctions d'échange sont appelées avec différentes configurations, et leurs effets sur les variables sont affichés avant et après chaque appel.
+
+c. Compilez et exécutez. Les résultats dépendent de la configuration des appels de fonctions. Vous pouvez observer que echange2 fonctionne correctement, mais echange1, echange3, et echange4 ne produisent pas les résultats attendus.
+
+2. Points pointés
+a. afficher_pointeur_point: Cette fonction prend un pointeur sur un point en tant que paramètre et affiche les coordonnées du point pointé.
+
+b. init_pointeur_tab: Cette fonction prend une taille t, un tableau de pointeurs sur des points de taille t, et un tableau de points de taille t. Elle initialise le tableau de pointeurs sur des points avec les adresses des éléments du tableau de points.
+
+c. afficher_pointeur_point_tab: Cette fonction prend une taille t et un tableau de pointeurs sur des points de taille t. Elle affiche les points pointés.
+
+d. norme: Cette fonction prend un pointeur sur un point et renvoie la norme du point.
+
+e. tri par sélection sur un tableau de pointeurs sur des points: Cette fonction trie les pointeurs de manière à ce que les points soient rangés par norme croissante.
+
+3. Compilation et Exécution
+Compilez les deux fichiers séparément (gcc echanges.c -o echanges et gcc pointeurs_points.c -o pointeurs_points) et exécutez le programme résultant (./echanges et ./pointeurs_points) pour observer les résultats. Vous devriez voir les affichages correspondants aux appels de fonctions et aux manipulations de pointeurs.
